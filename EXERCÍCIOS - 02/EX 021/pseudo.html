@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:actived {
+            color: yelloow;
+        }
+
+        a:visited {
+            color: darkred
+        }
+
+        .especial {
+            background-color: rgb(158, 82, 82);
+        }
+        
+        .especial::before {
+            content: '⮕'
+        }
+
+        .especial::after {
+            content: '⬅';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://yputube.com/cursoemvideo/" class="especial">Canal do youtube</a></li>
+        <li>Site curso em vídeo</li>
+    </ul>
+</body>
+</html>

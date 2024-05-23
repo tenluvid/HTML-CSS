@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam</h1>   
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminue o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="IMAGENS/PEQUENO.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="IMAGENS/MEDIO.png" type="image/png">
+        <img src="IMAGENS/GRANDE.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="MEDIA/Troye Sivan - My My My (Official Audio) - www.youtube.com_(www.KeepVid.to).mp3" controls autoplay loop></audio>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="MEDIA/Troye Sivan - My My My (Official Audio) - www.youtube.com_(www.KeepVid.to).mp3" type="media/mpeg">
+        <p>Infelizmente o seu navegador não é compatível com o áudio presente neste site. <a href="MEDIA/Troye Sivan - My My My (Official Audio) - www.youtube.com_(www.KeepVid.to).mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>
