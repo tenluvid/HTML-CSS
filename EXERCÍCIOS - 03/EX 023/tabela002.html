@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategray;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Stream do primeiro dia de Give Me That</caption>
+        <thead>
+            <tr>
+                <th scope="col">Música</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Give Me That</td>
+                <td>208.953</td>
+            </tr>
+            <tr>
+                <td>She a Wolf</td>
+                <td>87.526</td>
+            </tr>
+            <tr>
+                <td>Might As Well</td>
+                <td>74.499</td>
+            </tr>
+            <tr>
+                <td>New Ride</td>
+                <td>73.034</td>
+            </tr>
+            <tr>
+                <td>Don't Get Mad</td>
+                <td>64.838</td>
+            </tr>
+            <tr>
+                <td>Give Me That - Korean Version</td>
+                <td>208.937</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="row">Total de Streams</td>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
